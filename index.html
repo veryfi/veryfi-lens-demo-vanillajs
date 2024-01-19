@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Lens Demo</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="index.js" type="module"></script>
+ </head>
+ <body>
+  <div class="wrapper">
+
+    <div id="buttons-container" class="buttons-container">
+      <button class="start-button" onclick="startSocketLens()">Socket Receipt</button>
+      <button class="start-button" onclick="startWasmLens()">Wasm Receipt</button>
+      <button class="start-button" onclick="startWasmLong()">Long Receipt</button>
+      <button class="start-button" onclick="startUploadWasm()">Upload / Drag and Drop</button>
+    </div>
+    <button id="stop-button" onclick="exit()">X</button>
+     <div id="veryfi-container" class="v-container">
+     </div>
+     <div id="lens-image-preview" class="lens-image-preview">
+      <img id="lens-image">
+      <button id="submit-lens" class="submit-button" onclick="submitImage()">Submit</button>
+     </div>
+     <div id="upload-image-preview" class="upload-image-preview">
+      <img id="upload-image">
+      <img id="upload-cropped-image">
+      <button id="upload-crop-button" onclick="handleCrop()">Crop</button>
+      <button id="submit-upload" class="submit-button" onclick="submitImage()">Submit</button>
+     </div>
+     <div id="preview-container" class="preview-container"></div>
+     <button id="capture-socket-button" class="capture-button" onclick="captureSocket()"></button>
+     <button id="capture-wasm-button" class="capture-button" onclick="captureWasm()"></button>
+     <button id="stitch-button" class="stitch-button" onclick="startStitching()"></button>
+     <button id="stop-stitch-button" class="stitch-button" onclick="captureLong()">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="red" viewBox="0 0 24 24" strokeWidth={1.5} stroke="none">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 7.5A2.25 2.25 0 017.5 5.25h9a2.25 2.25 0 012.25 2.25v9a2.25 2.25 0 01-2.25 2.25h-9a2.25 2.25 0 01-2.25-2.25v-9z" />
+      </svg>
+    </button>
+    <div id="upload-area"
+      class="upload-area"
+      ondrop="drop(event)" 
+      ondragover="dragOver(event)" 
+      ondragleave="dragLeave(event)"
+      onclick="triggerInput()">
+      Drag and Drop or Click here to upload receipt
+        <input
+          id="file-input"
+          type="file"
+          accept="image/*"
+          onchange="handleImageChange(event)"
+          class="hidden"
+        />
+  </div>
+     v
+  </div>
+ </body>
+</html>

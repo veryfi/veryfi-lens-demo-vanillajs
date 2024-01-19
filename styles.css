@@ -1,0 +1,204 @@
+html,
+body {
+  margin: 0;
+  overflow: hidden;
+  background: black;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.buttons-container {
+  position: absolute;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   margin-top: 15vh;
+   width: 200px;
+   height: 400px;
+}
+
+.v-container {
+  display: flex;
+  margin-right: 100px;
+  align-self: center;
+  height: 100vh;
+  max-width: 500px;
+  object-fit: scale-down;
+}
+
+.lens-image-preview {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 70vh;
+  width: 300px;
+}
+.upload-image-preview {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 70vh;
+  width: 300px;
+}
+.capture-button {
+  display: none;
+  position: absolute;
+  bottom: 75px;
+  border: 4px solid rgba(255, 255, 255, 0.6);
+  border-radius: 9999px;
+  width: 64px;
+  height: 64px;
+  z-index: 50;
+  background-color: transparent;
+}
+
+.capture-button:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* hover:bg-white/50 */
+}
+
+.start-button {
+  width: 200px;
+  height: 50px;
+  z-index: 100;
+  background-color: transparent;
+  border: 1.5px solid white;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+
+.start-button:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* hover:bg-white/50 */
+}
+
+#stop-button {
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  width: 40px;
+  height: 40px;
+  z-index: 100;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  display: none;
+}
+
+#stop-button:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* hover:bg-white/50 */
+}
+
+#preview-container {
+   position: absolute;
+   left: 5vw;
+   top: 15vh;
+   width: 60px;
+   height: 300px;
+   background: transparent;
+   border: 1px solid green;
+   border-radius: 5px;
+   display: none;
+}
+
+.stitch-button {
+  position: absolute;
+   display: none;
+   bottom: 75px;
+   border: 4px solid rgba(255, 255, 255, 0.6);
+   border-radius: 9999px;
+   width: 64px;
+   height: 64px;
+   z-index: 50;
+   background-color: transparent;
+}
+
+.stitch-button:hover {
+   background-color: rgba(255, 255, 255, 0.5); /* hover:bg-white/50 */
+ }
+
+#stop-stitch-button {
+   justify-content: center;
+   align-items: center;
+}
+
+.submit-button {
+  display: none;
+  background-color: #4CAF50;
+  border: none;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#submit-button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.upload-area {
+   position: absolute;
+   bottom: 28px;
+   /* left: 35vw; */
+   width: 300px;
+   display: none;
+   background: #e2e8f0; /* slate-200 */
+   border-radius: 0.375rem; /* rounded-md */
+   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* shadow-md */
+   padding: 1rem; /* p-4 */
+   margin: 0.5rem; /* m-2 */
+   gap: 0.25rem; /* gap-1 */
+   justify-content: center;
+   align-items: center;
+   height: 50px;
+   margin-top: 1rem; /* mt-4 */
+   border-style: dashed;
+   border-width: 2px;
+   border-color: #22c55e; /* border-green-500 */
+   cursor: pointer;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.upload-area:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.hidden {
+   display: none;
+}
+
+#upload-crop-button {
+  display: none;
+  background-color: #4CAF50;
+  border: none;
+  width: 200px;
+  height: 50px;
+  left: 45vw;
+  bottom: 100px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#upload-crop-button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}

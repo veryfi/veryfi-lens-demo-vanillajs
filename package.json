@@ -1,0 +1,19 @@
+{
+  "name": "veryfi-lens-demo-vanillajs",
+  "version": "1.0.0",
+  "description": "Vanilla JS example app, demonstrating lens for browser SDK integration",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veryfi/veryfi-lens-demo-vanillajs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/veryfi/veryfi-lens-demo-vanillajs/issues"
+  },
+  "homepage": "https://github.com/veryfi/veryfi-lens-demo-vanillajs#readme"
+}
