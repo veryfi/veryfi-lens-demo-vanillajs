@@ -1,9 +1,11 @@
 import VeryfiLens from "./lens-sdk-wasm/veryfi-lens.js";
 const PROCESS_DOCUMENT_URL = "https://lens-dev.veryfi.com/rest/process";
-const CLIENT_ID = "YOUR_CLIENT_ID";
-const API_KEY = "YOUR_API_KEY";
-const USERNAME = "your.username";
-
+// const CLIENT_ID = "YOUR_CLIENT_ID";
+// const API_KEY = "YOUR_API_KEY";
+// const USERNAME = "your.username";
+const CLIENT_ID = "vrfXtjjoSaufymeUyV9etJt92sUc1lvT4TmvjnO";
+const API_KEY = "13b5dc55affc324fe6822d9a1f7e35e5";
+const USERNAME = "api_demo";
 
 
 let isSocket = false;
